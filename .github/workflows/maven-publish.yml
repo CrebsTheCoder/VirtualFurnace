@@ -22,7 +22,7 @@ jobs:
           distribution: 'temurin'
           
       - name: Build with Maven
-        run: mvn -B package --file pom.xml build
+        run: mvn -B package --file pom.xml compile
 
       - name: Set outputs
         id: short_sha
